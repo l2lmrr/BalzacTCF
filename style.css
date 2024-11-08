@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+body {
+    background-image: url('P1.png'); /* Replace with the path to your image */
+    margin: 0;
+    padding: 0;
+    font-family: 'Unica One', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.start-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('P1.png'); /* The image with the grid and squares */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.text-container {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 648px;
+    height: 418px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box {
+    background: white;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);   
+    padding: 20px;
+    width: 450px;
+    height: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 26%;
+    margin-right: 14%;
+    padding-bottom: 10%;
+    text-align: left;
+    position: relative;
+    border-radius: 10px;
+}
+
+.text-box h1 {
+    margin: 0;
+    font-size: 55px;
+    line-height: 1.2    ;
+    color: #000;
+    font-family: 'Unica One', sans-serif;
+}
+
+.highlight {
+    background-color: #f4c84d;
+    padding-right: 2%;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    margin: 20px 0;
+}
+
+.start-button {
+    font-size: 24px;
+    color: #000;
+    font-family: 'Unica One', sans-serif;
+    cursor: pointer; /* Add this line */
+}
+
+.shield-icon {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.icon-box {
+    background: white;
+    padding: 20px;
+    width: 385px;
+    height: 234px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.shield-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    background-image: url('P1.png'); /* Replace with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-container {
+    background-color: white;
+    width: 80vw; /* Adjust width to take most of the viewport */
+    height: 80vh; /* Adjust height to take most of the viewport */
+    padding: 20px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling with Unica One font */
+.header {
+    background-color: #f4c84d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1.2em;
+    font-family: 'Unica One', sans-serif;
+}
+
+.question-number {
+    font-size: 1.2em;
+}
+
+.time-counter {
+    font-size: 1.2em;
+}
+
+#counter, #time {
+    color: #333;
+}
+
+/* Question Box Styling with Ubuntu font */
+.question-box {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif; /* Font for question text */
+}
+
+.question-box p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Increase gap between buttons for better spacing */
+    margin-bottom: 20px;
+}
+
+/* Buttons Styling with Arial font */
+button {
+    padding: 20px 60px; /* Increase padding for larger button size */
+    font-size: 1.5em; /* Increase font size */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Add rounded corners for a modern look */
+    font-family: Arial, sans-serif; /* Font for buttons */
+}
+
+.true, .false {
+    background-color: #333;
+    color: white;
+    width: 150px; /* Fixed width for uniform button size */
+    height: 70px; /* Fixed height for uniform button size */
+    font-weight: bold; /* Bold font for better readability */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.true:hover, .false:hover {
+    background-color: #555;
+}
+
+.feedback-message {
+    background-color: #f4c84d;
+    color: #333;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add margin for spacing from buttons */
+}
+
+/* Container styling - increased size */
+.container {
+    width: 1050px; /* Increased width */
+    height: 540px; /* Increased height */
+    background-color: white;
+    padding: 30px; /* Increased padding */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Centering the banner text */
+.banner {
+    width: 100%;
+    background-color: #f4c84d;
+    color: black;
+    font-weight: bold;
+    padding: 15px 0; /* Increased padding */
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center;
+    font-size: 1.4rem; /* Increased font size */
+    font-family: 'Unica One', sans-serif; /* Apply Unica One font */
+}
+
+/* Main content styling */
+.main-content {
+    margin-top: 30px; /* Increased top margin */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.line-behind-icons {
+    position: absolute;
+    top: 60px; /* Adjusted position */
+    width: 100%;
+    height: 25px; /* Increased height */
+    background-color: #f4c84d;
+    z-index: 0;
+}
+
+.icon-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Increased gap */
+    z-index: 1;
+}
+
+.icon-small, .icon-large {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Adjusted sizes for icons */
+.icon-small {
+    width: 70px; /* Slightly larger */
+    height: 70px;
+}
+
+.icon-large {
+    width: 140px; /* Slightly larger */
+    height: 140px;
+}
+
+/* Ensures images inside icons are editable and remain within bounds */
+.icon-small img, .icon-large img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Center the congratulatory message and enlarge */
+.message h1 {
+    background-color: #fbcd35;
+    display: inline-block;
+    padding: 20px 40px; /* Increased padding */
+    font-size: 2.6rem; /* Increased font size */
+    font-weight: bold;
+    margin: 30px 0; /* Increased margin */
+    font-family: 'Unica One', sans-serif; /* Apply Unica One font */
+}
+
+.message p {
+    color: #555;
+    font-size: 1.4rem; /* Increased font size */
+    width: 85%;
+    text-align: center; /* Center-align the message text */
+    margin-left: 60px; /* Added slight left margin for alignment */
+    font-family: 'Ubuntu', sans-serif; /* Apply Ubuntu font */
+}
+
+.answer-option {
+    background-color: #f4c84d; /* Yellow background */
+    color: #333;
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.answer-option:hover {
+    background-color: #FFC107; /* Slightly darker yellow on hover */
+}
+
+.hide {
+    display: none;
+}
+
+/* Add this to your CSS file */
+button.correct-answer {
+    background-color: green;
+    color: white;
+}
+
+button.incorrect-answer {
+    background-color: red;
+    color: white;
+}
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unica+One&display=swap');
+
+/* Container styling - increased size */
+.container {
+    width: 1050px; /* Increased width */
+    height: 540px; /* Increased height */
+    background-color: white;
+    padding: 30px; /* Increased padding */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Centering the banner text */
+.banner {
+    width: 100%;
+    background-color: #f4c84d;
+    color: black;
+    font-weight: bold;
+    padding: 15px 0; /* Increased padding */
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center;
+    font-size: 1.4rem; /* Increased font size */
+    font-family: 'Unica One', sans-serif; /* Apply Unica One font */
+}
+
+/* Main content styling */
+.main-content {
+    margin-top: 30px; /* Increased top margin */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.line-behind-icons {
+    position: absolute;
+    top: 60px; /* Adjusted position */
+    width: 100%;
+    height: 25px; /* Increased height */
+    background-color: #f4c84d;
+    z-index: 0;
+}
+
+.icon-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Increased gap */
+    z-index: 1;
+}
+
+.icon-small, .icon-large {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Adjusted sizes for icons */
+.icon-small {
+    width: 70px; /* Slightly larger */
+    height: 70px;
+}
+
+.icon-large {
+    width: 140px; /* Slightly larger */
+    height: 140px;
+}
+
+/* Ensures images inside icons are editable and remain within bounds */
+.icon-small img, .icon-large img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Center the congratulatory message and enlarge */
+.message h1 {
+    background-color: #d4b143;
+    display: inline-block;
+    padding: 20px 40px; /* Increased padding */
+    font-size: 2.6rem; /* Increased font size */
+    font-weight: bold;
+    margin: 30px 0; /* Increased margin */
+    font-family: 'Unica One', sans-serif; /* Apply Unica One font */
+}
+
+.message p {
+    color: #555;
+    font-size: 1.4rem; /* Increased font size */
+    width: 85%;
+    text-align: center; /* Center-align the message text */
+    margin-left: 60px; /* Added slight left margin for alignment */
+    font-family: 'Ubuntu', sans-serif; /* Apply Ubuntu font */
+}
+
+#restart-button {
+    background-color: #f4c84d; /* Yellow background */
+    color: #333;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer; /* Ensures it shows a pointer on hover */
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+#restart-button:hover {
+    background-color: #FFC107; /* Slightly darker yellow on hover */
+}
+
+#answer-option {
+    background-color: #f4c84d; /* Yellow background */
+    color: #333;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer; /* Ensures it shows a pointer on hover */
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+#answer-option:hover {
+    background-color: #FFC107; /* Slightly darker yellow on hover */
+}
+

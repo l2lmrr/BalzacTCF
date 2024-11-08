@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test d'Éducation Supérieure</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="start-container" class="start-container">
+        <div class="text-container">
+            <div class="text-box">
+                <h1>TEST DE<br><span class="highlight">CONNAISSANCE</span><br>DU FRANCAIS</h1>
+                <div class="horizontal-line"></div>
+                <div id="start-button" class="start-button">// Démarrer →</div>
+                <div id="show-results-button" class="start-button">// Voir les Derniers Résultats →</div>
+            </div>
+        </div>
+        <div class="shield-icon">
+            <div class="icon-box">
+                <img src="shield-icon.png" alt="Icône de Bouclier">
+            </div>
+        </div>
+    </div>
+
+    <!-- Questions Page -->
+    <div id="questions-page" class="background" style="display: none;">
+        <div class="question-container">
+            <div class="header">
+                <div class="question-number">QUESTION <span id="counter">1</span>/20</div>
+                <div class="time-counter">Temps : <span id="time">00:20</span></div>
+            </div>
+            <div class="question-box">
+                <!-- Question Text -->
+                <p>La question s'affichera ici.</p>
+                
+                <!-- Answer Options Buttons -->
+                <div class="buttons"></div>
+                
+                <!-- Feedback Message (initially hidden) -->
+                <p id="feedback" class="feedback-message hide"></p>
+            </div>
+        </div>
+    </div>
+
+<!-- Results Page -->
+<div id="results-page" class="container" style="display: none;">
+    <div class="banner">
+        <span id="congratulations-message">CONGRATULATIONS!</span>
+    </div>
+    <div class="main-content">
+        <div class="line-behind-icons"></div>
+        <div class="icon-group">
+            <div class="icon-small">
+                <img src="TCF.png" alt="Small Icon">
+            </div>
+            <div class="icon-large">
+                <img src="Balzac.png" alt="Large Icon">
+            </div>
+            <div class="icon-small">
+                <img src="shield-icon.png" alt="Small Icon">
+            </div>
+        </div>
+        <div class="message">
+            <h1 id="level-message">YEAHHHH!</h1>
+            <p id="congratulations-text">Here you can include a text to congratulate and wish your audience luck at the end of the quiz.</p>
+            <div class="buttons">
+                <div id="restart-button" class="answer-option">Recommencer</div>
+                <div id="download-results-button" class="answer-option">Mes résultats</div>                
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js" defer></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
